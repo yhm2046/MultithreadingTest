@@ -1,15 +1,15 @@
 package com.example.multithreadingtest;
 
 /**
- * 2023.2.5 10:23
- * 继承Thread类创建线程
+ * 2023.2.6 14:57
+ * Using Runnable interface build Thread
  */
-public class FirstThread extends Thread{
+public class RunnableThread implements Runnable {
     private int i;
     @Override
     public void run() {
         for(;i < 5; i++){
-            System.out.println("FirstThread thread name:" + getName() + ":" + i);
+            System.out.println("RunnableThread name:" + Thread.currentThread().getName() + ":" + i);
         }
     }
 }

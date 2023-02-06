@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Main2Activity extends AppCompatActivity {
+public class RunnableActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,11 +34,13 @@ public class Main2Activity extends AppCompatActivity {
  FirstThread thread name:Thread-3:4
         * */
         for(int i = 0; i <10; i++){ //循环10次,从第2次开始执行线程,每次运行见过不一样
-            System.out.println("mainactivity getname:" + Thread.currentThread().getName()
+            System.out.println("main:" + Thread.currentThread().getName()
                     + ":" + i);
-            if(i == 2){
-                new FirstThread().start();
-                new FirstThread().start();
+            if(i == 2){ //线程执行次数跟机器有关,1个线程执行5次,2个6次,3个七次
+                var st = new RunnableThread();
+                new Thread(st,"a").start();
+                new Thread(st,"b").start();
+                new Thread(st,"c").start();
             }
         }
     }
