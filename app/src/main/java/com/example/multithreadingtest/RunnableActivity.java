@@ -4,6 +4,10 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * build at 2023.2.8    Wednesday
+ * 疯狂java讲义P736,16.2.2
+ */
 public class RunnableActivity extends AppCompatActivity {
 
     @Override
