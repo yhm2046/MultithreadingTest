@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * build at 2023.2.8    Wednesday
- * 疯狂java讲义P736,16.2.2
+ * 疯狂java讲义P736,16.2.2, second thread
  */
 public class RunnableActivity extends AppCompatActivity {
 

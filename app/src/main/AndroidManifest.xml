@@ -27,6 +27,10 @@
         </activity>
         <activity android:name=".CallableActivity"
             android:exported="true">
+
+        </activity>
+        <activity android:name=".InvokeRunActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
